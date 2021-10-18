@@ -39,19 +39,19 @@ namespace virusMain
         private int version = 1;
         int serverTcpPort = 49001;
 
-        public string GiveMAC()
+        public string GiveMAC()                                         //Получение мак адреса пк
         {
             var macAddress = NetworkInterface.GetAllNetworkInterfaces();
             var getTarget = macAddress[0].GetPhysicalAddress();
             return getTarget.ToString();
         }
 
-        public void setversion(int new_version_id)                     //на всякий случай
+        public void setversion(int new_version_id)                      //на всякий случай
         {
             version = new_version_id;
         }
 
-        public int giveversion() { return version; }
+        public int giveversion() { return version; }                    //Возвращает версию
 
         public static string GiveGlobalIp()
         {
