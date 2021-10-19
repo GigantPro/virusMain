@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Threading;
-using Microsoft.Win32.TaskScheduler;
+﻿using System.Threading;
 
 
 namespace virusMain
