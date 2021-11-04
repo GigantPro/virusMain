@@ -132,9 +132,7 @@ namespace virusMain
                             break;
                     }
                 }
-
                 Process.Start("upgrade.exe");
-
                 Process.GetCurrentProcess().Kill();
             }
         }
