@@ -88,7 +88,7 @@ namespace virusMain
                     size = listener.Receive(buffer);
                     data.Append(Encoding.UTF8.GetString(buffer, 0, size));
                 } while (listener.Available > 0);
-                Console.WriteLine(System.Convert.ToString(data));
+                Console.WriteLine(Convert.ToString(data));
                 string temp_answ = Convert.ToString(data);
 
                 for (int i = 0; i < temp_answ.Length; i++)
@@ -101,7 +101,7 @@ namespace virusMain
                             {
                                 temp = temp + temp_answ[j];
                             }
-                            long razm = Int64.Parse(temp); ;
+                            long razm = Int64.Parse(temp);
 
                             buffer = new byte[razm + 5];
 
